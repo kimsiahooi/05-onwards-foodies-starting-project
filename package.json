@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "mysql2": "^3.15.3",
+    "next": "16.0.1",
     "react": "^19",
     "react-dom": "^19",
-    "next": "16.0.1"
+    "sequelize": "^6.37.7"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
