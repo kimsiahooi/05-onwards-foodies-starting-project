@@ -9,7 +9,12 @@ export default function MealItem({ meal }: { meal: Meal }) {
     <article className={classes.meal}>
       <header>
         <div className={classes.image}>
-          <Image src={meal.image} alt={meal.title} fill />
+          <Image
+            src={meal.image}
+            alt={meal.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
         </div>
         <div className={classes.headerText}>
           <h2>{meal.title}</h2>
