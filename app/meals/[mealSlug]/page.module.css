@@ -71,6 +71,7 @@
   max-width: 60rem;
   margin: 2rem auto;
   animation: fade-slide-in-from-bottom 1s ease-out forwards;
+  white-space: pre-line;
 }
 
 .loading {

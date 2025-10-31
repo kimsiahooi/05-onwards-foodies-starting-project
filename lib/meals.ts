@@ -7,9 +7,11 @@ export const getMeals = async () => {
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
   // throw new Error("Loading meals failed");
-  return <Meal[]>db.prepare("SELECT * FROM meals").all();
+  return <Meal[] | undefined>db.prepare("SELECT * FROM meals").all();
 };
 
-export const getMeal = async (slug: string) => {
-  return <Meal>db.prepare("SELECT * FROM meals WHERE slug = ?").get(slug);
+export const getMeal = (slug: string) => {
+  return <Meal | undefined>(
+    db.prepare("SELECT * FROM meals WHERE slug = ?").get(slug)
+  );
 };
