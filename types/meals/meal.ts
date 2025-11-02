@@ -8,3 +8,12 @@ export interface Meal {
   creator_email: string;
   instructions: string;
 }
+
+export interface MealFormData {
+  title: string;
+  summary: string;
+  instructions: string;
+  image: File;
+  creator: string;
+  creator_email: string;
+}
